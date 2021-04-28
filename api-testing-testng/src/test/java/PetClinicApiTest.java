@@ -1,14 +1,22 @@
 import api.common.exception.InvalidResponseException;
+import api.services.PetTypesApiClient;
+import api.services.SpecialtiesApiClient;
 import api.services.VetApiClient;
+import api.services.data.PetTypeItem;
 import api.services.data.Specialties;
 import api.services.data.SpecialtiesItem;
 import api.services.data.VeterinariansItem;
 import io.qameta.allure.Description;
+import io.restassured.http.Headers;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ListIterator;
+import java.util.Properties;
 
 
 public class PetClinicApiTest {
@@ -19,7 +27,7 @@ public class PetClinicApiTest {
         apiUrl = System.getProperty("apiUrl");
     }
 
- /*   @Test
+    @Test()
     @Description("Test Description:Pet Type Status Code Verification.  API response 200 and fields values as id and names(pet types).")
     public void getPetType_StatusCodeVerification() throws InvalidResponseException {
         PetTypesApiClient client = new PetTypesApiClient(apiUrl, "/api/pettypes");
@@ -29,7 +37,7 @@ public class PetClinicApiTest {
         softly.assertAll();
     }
 
-    @Test
+   /* @Test
     @Description("Test Description:Pet Type Response Header Verification")
     public void getPetType_HeaderVerification() throws InvalidResponseException {
         PetTypesApiClient client = new PetTypesApiClient(apiUrl, "/api/pettypes");
@@ -39,7 +47,7 @@ public class PetClinicApiTest {
         softly.assertThat(contentType ).isNotNull() ;
         softly.assertThat(date1).isNotNull();
         softly.assertAll();
-    }
+    }*/
 
     @Test
     @Description("Test Description:Pet Type get details verification")
@@ -53,11 +61,12 @@ public class PetClinicApiTest {
         softly.assertThat(getPet[1].getName()).as("the name is test:").isEqualTo("cat");
         softly.assertAll();
 
-    }*/
-    //Create Product using property file and hardcoding value
-  /*  @Test
+    }
+
+
+   @Test
     @Description("Test Description:Add new pettype using property file and hardcoding value.Post pet type rest controller is used to add pet type details.")
-    public void createPetType_checkId_ShouldReturnNewProduct () throws InvalidResponseException,IOException,FileNotFoundException {
+    public void createPetType_checkId_ShouldReturnNewProduct () throws InvalidResponseException, IOException, FileNotFoundException {
 
         Properties pro = new Properties();
         FileInputStream file = new FileInputStream("src/test/java/data/PostPetTypeData.properties");
@@ -74,7 +83,7 @@ public class PetClinicApiTest {
 
         softly.assertAll();
     }
-   /* @Test
+   @Test
     @Description("Test Description:Specialties Status Code Verification.Get all data for the  Speciality rest controller. Check for service availablity with status ID 200 and following fields id and names.")
     public void getSpecialties_StatusCode() throws InvalidResponseException {
         SpecialtiesApiClient client = new SpecialtiesApiClient(apiUrl, "/api/specialties");
@@ -82,10 +91,10 @@ public class PetClinicApiTest {
         SoftAssertions softly = new SoftAssertions();
         softly.assertThat(statusCode).isEqualTo(200);
         softly.assertAll();
-    }*/
+    }
 
     //Get specialties details
-   /* @Test
+    @Test
     @Description("Test Description:Specialties Get details Verification")
     public void getspecialties_DefaultLimit_ShouldReturn10Results() throws InvalidResponseException {
         SpecialtiesApiClient client = new SpecialtiesApiClient(apiUrl, "/api/specialties");
@@ -97,7 +106,7 @@ public class PetClinicApiTest {
         softly.assertThat(getproduct[0].getName()).as("the speciality is radiology :  ").isEqualTo("radiology");
         softly.assertAll();
 
-    }*/
+    }
 
     @Test
     @Description("Test Description:Vet Status Code Verification.  API response 200 and fields values as id and first name, last name, speciality.")

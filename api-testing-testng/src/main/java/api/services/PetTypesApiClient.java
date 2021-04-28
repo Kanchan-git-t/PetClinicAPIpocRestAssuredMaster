@@ -8,6 +8,7 @@ import api.services.data.PetType;
 import api.services.data.PetTypeItem;
 import com.google.gson.GsonBuilder;
 import io.restassured.config.ObjectMapperConfig;
+import io.restassured.http.Headers;
 import io.restassured.http.Method;
 import io.restassured.internal.mapping.GsonMapper;
 import io.restassured.mapper.ObjectMapperType;
@@ -27,13 +28,13 @@ public class PetTypesApiClient extends ApiClient {
         ApiResponse response = caller.executeRequest(getRequest(), Method.GET, PetType.class);
         return response.getHttpStatusCode();
     }
-
-    //Header verification
 /*
+    //Header verification
+
     public Headers getPetHeader(String s) throws InvalidResponseException {
 
         ApiResponse response = caller.executeRequest(getRequest(), Method.GET, PetType.class);
-        return response.getHttpHeaders();
+        return response..getHttpHeaders();
 
     }*/
 
