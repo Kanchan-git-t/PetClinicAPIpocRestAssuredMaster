@@ -11,6 +11,7 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
@@ -32,6 +33,11 @@ dependencies {
 test {
     systemProperty 'apiUrl', apiUrl
     reports.junitXml.outputPerTestCase = true
+
+    /* useTestNG() {
+        useDefaultListeners = true
+        suiteName = "PetClinicTestSuite"
+    }*/
 
     useJUnitPlatform(){
         //useDefaultListeners = true
