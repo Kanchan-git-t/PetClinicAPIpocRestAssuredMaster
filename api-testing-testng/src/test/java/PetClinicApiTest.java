@@ -54,7 +54,7 @@ public class PetClinicApiTest {
         SoftAssertions softly = new SoftAssertions();
         System.out.println("The value at index 1" + getPet[0]);
         softly.assertThat(getPet[2].getId()).as("ID's should be unique").isNotSameAs(getPet[3].getId());
-        softly.assertThat(getPet[0].getName()).as("the name is test:").isEqualTo("snake");
+        softly.assertThat(getPet[0].getName()).as("the name is test:").isEqualTo("dog");
         softly.assertAll();
 
     }
