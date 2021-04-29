@@ -15,6 +15,7 @@ pipeline {
 					rm -rf /var/lib/jenkins/workspace/\$JOB_NAME/build/reports/tests/test
 					cp -R /app/build/reports/tests/test/ /var/lib/jenkins/workspace/\$JOB_NAME//build/reports/tests/
 				   """
+				 //cp -r /var/lib/jenkins/workspace/Job1/allure-results/ /var/lib/jenkins/workspace/Job1_AllureReport/
 				//sh 'cp /app//build/reports/tests/test/index.html /var/lib/jenkins/workspace/${env.BUILD_TAG}'
 
 			}
