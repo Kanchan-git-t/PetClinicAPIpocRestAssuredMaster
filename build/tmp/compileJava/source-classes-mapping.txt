@@ -1,0 +1,21 @@
+api/services/data/PetType.java
+ api.services.data.PetType
+api/services/data/Specialties.java
+ api.services.data.Specialties
+api/services/data/Veterinarians.java
+ api.services.data.Veterinarians
+api/services/SpecialtiesApiClient.java
+ api.services.SpecialtiesApiClient
+api/services/data/SpecialtiesItem.java
+ api.services.data.SpecialtiesItem
+ api.services.data.SpecialtiesItem$SpecialtiesItemBuilder
+api/services/data/VeterinariansItem.java
+ api.services.data.VeterinariansItem
+ api.services.data.VeterinariansItem$VeterinariansItemBuilder
+api/services/data/PetTypeItem.java
+ api.services.data.PetTypeItem
+ api.services.data.PetTypeItem$PetTypeItemBuilder
+api/services/VetApiClient.java
+ api.services.VetApiClient
+api/services/PetTypesApiClient.java
+ api.services.PetTypesApiClient

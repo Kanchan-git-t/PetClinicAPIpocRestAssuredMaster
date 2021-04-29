@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PetClinicApiTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-04-29T15:18:25" hostname="DESKTOP-MV9TH73" time="7.263">
+  <properties/>
+  <testcase name="createPetType_checkId_ShouldReturnNewProduct()" classname="PetClinicApiTest" time="3.809">
+    <system-out><![CDATA[id : 0
+name : Hybrid
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/pettypes
+Body:
+{"name":"Hybrid","id":0}
+HTTP/1.1 201 
+{"id":0,"name":"Hybrid"}
+]]></system-out>
+  </testcase>
+  <testcase name="getPetType_ShouldReturnAllResults()" classname="PetClinicApiTest" time="0.589">
+    <system-out><![CDATA[Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/pettypes
+Body:			<none>
+HTTP/1.1 200 
+[{"id":22,"name":"Dog"},{"id":25,"name":"snake"},{"id":26,"name":"Hybrid"},{"id":34,"name":"Cat"},{"id":35,"name":"Dog"},{"id":36,"name":"Dog"},{"id":37,"name":"Hybrid"},{"id":38,"name":"Hybrid"},{"id":39,"name":"Hybrid"},{"id":40,"name":"Hybrid"},{"id":41,"name":"Hybrid"},{"id":42,"name":"Dog"},{"id":43,"name":"Hybrid"}]
+The value at index 1api.services.data.PetTypeItem@6c430c58
+]]></system-out>
+  </testcase>
+  <testcase name="getspecialties_DefaultLimit_ShouldReturn10Results()" classname="PetClinicApiTest" time="0.549">
+    <system-out><![CDATA[Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/specialties
+Body:			<none>
+HTTP/1.1 200 
+[{"id":1,"name":"radiology"},{"id":2,"name":"surgery"},{"id":3,"name":"dentistry"},{"id":4,"name":"Grooming"}]
+The value at index 1api.services.data.SpecialtiesItem@238930a3
+]]></system-out>
+  </testcase>
+  <testcase name="getVet_ShouldReturnAllResults()" classname="PetClinicApiTest" time="0.564">
+    <system-out><![CDATA[Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/vets
+Body:			<none>
+HTTP/1.1 200 
+[{"id":1,"firstName":"James","lastName":"Bamboo","specialties":[{"id":2,"name":"surgery"}]},{"id":2,"firstName":"Helen","lastName":"Leary","specialties":[{"id":1,"name":"radiology"}]},{"id":3,"firstName":"Linda","lastName":"Douglas","specialties":[{"id":3,"name":"dentistry"},{"id":2,"name":"surgery"}]},{"id":4,"firstName":"Rafael","lastName":"Ortega","specialties":[{"id":2,"name":"surgery"}]},{"id":5,"firstName":"Henry","lastName":"Stevens","specialties":[{"id":1,"name":"radiology"}]},{"id":14,"firstName":"Shital","lastName":"Gawande","specialties":[{"id":3,"name":"dentistry"}]},{"id":24,"firstName":"Shital","lastName":"G","specialties":[{"id":1,"name":"radiology"}]},{"id":28,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":29,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":30,"firstName":"Tapasya","lastName":"Kandekar","specialties":[{"id":1,"name":"radiology"}]},{"id":34,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":37,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":39,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":40,"firstName":"James","lastName":"Bean","specialties":[]},{"id":43,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":44,"firstName":"Test1","lastName":"Test2","specialties":[{"id":2,"name":"surgery"}]},{"id":45,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":46,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":47,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":48,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":49,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":50,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":51,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":52,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":53,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":54,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":55,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":56,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":57,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":58,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":59,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]}]
+The value at index 1api.services.data.VeterinariansItem@395027cd
+]]></system-out>
+  </testcase>
+  <testcase name="getPetType_StatusCodeVerification()" classname="PetClinicApiTest" time="0.548">
+    <system-out><![CDATA[Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/pettypes
+Body:			<none>
+HTTP/1.1 200 
+[{"id":22,"name":"Dog"},{"id":25,"name":"snake"},{"id":26,"name":"Hybrid"},{"id":34,"name":"Cat"},{"id":35,"name":"Dog"},{"id":36,"name":"Dog"},{"id":37,"name":"Hybrid"},{"id":38,"name":"Hybrid"},{"id":39,"name":"Hybrid"},{"id":40,"name":"Hybrid"},{"id":41,"name":"Hybrid"},{"id":42,"name":"Dog"},{"id":43,"name":"Hybrid"}]
+]]></system-out>
+  </testcase>
+  <testcase name="getSpecialties_StatusCode()" classname="PetClinicApiTest" time="0.63">
+    <system-out><![CDATA[Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/specialties
+Body:			<none>
+HTTP/1.1 200 
+[{"id":1,"name":"radiology"},{"id":2,"name":"surgery"},{"id":3,"name":"dentistry"},{"id":4,"name":"Grooming"}]
+]]></system-out>
+  </testcase>
+  <testcase name="getVet_StatusCodeVerification()" classname="PetClinicApiTest" time="0.556">
+    <system-out><![CDATA[Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/vets
+Body:			<none>
+HTTP/1.1 200 
+[{"id":1,"firstName":"James","lastName":"Bamboo","specialties":[{"id":2,"name":"surgery"}]},{"id":2,"firstName":"Helen","lastName":"Leary","specialties":[{"id":1,"name":"radiology"}]},{"id":3,"firstName":"Linda","lastName":"Douglas","specialties":[{"id":3,"name":"dentistry"},{"id":2,"name":"surgery"}]},{"id":4,"firstName":"Rafael","lastName":"Ortega","specialties":[{"id":2,"name":"surgery"}]},{"id":5,"firstName":"Henry","lastName":"Stevens","specialties":[{"id":1,"name":"radiology"}]},{"id":14,"firstName":"Shital","lastName":"Gawande","specialties":[{"id":3,"name":"dentistry"}]},{"id":24,"firstName":"Shital","lastName":"G","specialties":[{"id":1,"name":"radiology"}]},{"id":28,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":29,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":30,"firstName":"Tapasya","lastName":"Kandekar","specialties":[{"id":1,"name":"radiology"}]},{"id":34,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":37,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":39,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":40,"firstName":"James","lastName":"Bean","specialties":[]},{"id":43,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":44,"firstName":"Test1","lastName":"Test2","specialties":[{"id":2,"name":"surgery"}]},{"id":45,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":46,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":47,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":48,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":49,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":50,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":51,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":52,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":53,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":54,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":55,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":56,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":57,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":58,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]},{"id":59,"firstName":"Dr.Suman","lastName":"Babu","specialties":[{"id":2,"name":"surgery"}]}]
+]]></system-out>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

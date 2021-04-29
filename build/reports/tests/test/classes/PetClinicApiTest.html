@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class PetClinicApiTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class PetClinicApiTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; PetClinicApiTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">7.245s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createPetType_checkId_ShouldReturnNewProduct()</td>
+<td class="success">3.809s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getPetType_ShouldReturnAllResults()</td>
+<td class="success">0.589s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getPetType_StatusCodeVerification()</td>
+<td class="success">0.548s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getSpecialties_StatusCode()</td>
+<td class="success">0.630s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getVet_ShouldReturnAllResults()</td>
+<td class="success">0.564s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getVet_StatusCodeVerification()</td>
+<td class="success">0.556s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getspecialties_DefaultLimit_ShouldReturn10Results()</td>
+<td class="success">0.549s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>id : 0
+name : Hybrid
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/pettypes
+Body:
+{&quot;name&quot;:&quot;Hybrid&quot;,&quot;id&quot;:0}
+HTTP/1.1 201 
+{&quot;id&quot;:0,&quot;name&quot;:&quot;Hybrid&quot;}
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/pettypes
+Body:			&lt;none&gt;
+HTTP/1.1 200 
+[{&quot;id&quot;:22,&quot;name&quot;:&quot;Dog&quot;},{&quot;id&quot;:25,&quot;name&quot;:&quot;snake&quot;},{&quot;id&quot;:26,&quot;name&quot;:&quot;Hybrid&quot;},{&quot;id&quot;:34,&quot;name&quot;:&quot;Cat&quot;},{&quot;id&quot;:35,&quot;name&quot;:&quot;Dog&quot;},{&quot;id&quot;:36,&quot;name&quot;:&quot;Dog&quot;},{&quot;id&quot;:37,&quot;name&quot;:&quot;Hybrid&quot;},{&quot;id&quot;:38,&quot;name&quot;:&quot;Hybrid&quot;},{&quot;id&quot;:39,&quot;name&quot;:&quot;Hybrid&quot;},{&quot;id&quot;:40,&quot;name&quot;:&quot;Hybrid&quot;},{&quot;id&quot;:41,&quot;name&quot;:&quot;Hybrid&quot;},{&quot;id&quot;:42,&quot;name&quot;:&quot;Dog&quot;},{&quot;id&quot;:43,&quot;name&quot;:&quot;Hybrid&quot;}]
+The value at index 1api.services.data.PetTypeItem@6c430c58
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/specialties
+Body:			&lt;none&gt;
+HTTP/1.1 200 
+[{&quot;id&quot;:1,&quot;name&quot;:&quot;radiology&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;dentistry&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Grooming&quot;}]
+The value at index 1api.services.data.SpecialtiesItem@238930a3
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/vets
+Body:			&lt;none&gt;
+HTTP/1.1 200 
+[{&quot;id&quot;:1,&quot;firstName&quot;:&quot;James&quot;,&quot;lastName&quot;:&quot;Bamboo&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:2,&quot;firstName&quot;:&quot;Helen&quot;,&quot;lastName&quot;:&quot;Leary&quot;,&quot;specialties&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;radiology&quot;}]},{&quot;id&quot;:3,&quot;firstName&quot;:&quot;Linda&quot;,&quot;lastName&quot;:&quot;Douglas&quot;,&quot;specialties&quot;:[{&quot;id&quot;:3,&quot;name&quot;:&quot;dentistry&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:4,&quot;firstName&quot;:&quot;Rafael&quot;,&quot;lastName&quot;:&quot;Ortega&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:5,&quot;firstName&quot;:&quot;Henry&quot;,&quot;lastName&quot;:&quot;Stevens&quot;,&quot;specialties&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;radiology&quot;}]},{&quot;id&quot;:14,&quot;firstName&quot;:&quot;Shital&quot;,&quot;lastName&quot;:&quot;Gawande&quot;,&quot;specialties&quot;:[{&quot;id&quot;:3,&quot;name&quot;:&quot;dentistry&quot;}]},{&quot;id&quot;:24,&quot;firstName&quot;:&quot;Shital&quot;,&quot;lastName&quot;:&quot;G&quot;,&quot;specialties&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;radiology&quot;}]},{&quot;id&quot;:28,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:29,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:30,&quot;firstName&quot;:&quot;Tapasya&quot;,&quot;lastName&quot;:&quot;Kandekar&quot;,&quot;specialties&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;radiology&quot;}]},{&quot;id&quot;:34,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:37,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:39,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:40,&quot;firstName&quot;:&quot;James&quot;,&quot;lastName&quot;:&quot;Bean&quot;,&quot;specialties&quot;:[]},{&quot;id&quot;:43,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:44,&quot;firstName&quot;:&quot;Test1&quot;,&quot;lastName&quot;:&quot;Test2&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:45,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:46,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:47,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:48,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:49,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:50,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:51,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:52,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:53,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:54,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:55,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:56,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:57,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:58,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:59,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]}]
+The value at index 1api.services.data.VeterinariansItem@395027cd
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/pettypes
+Body:			&lt;none&gt;
+HTTP/1.1 200 
+[{&quot;id&quot;:22,&quot;name&quot;:&quot;Dog&quot;},{&quot;id&quot;:25,&quot;name&quot;:&quot;snake&quot;},{&quot;id&quot;:26,&quot;name&quot;:&quot;Hybrid&quot;},{&quot;id&quot;:34,&quot;name&quot;:&quot;Cat&quot;},{&quot;id&quot;:35,&quot;name&quot;:&quot;Dog&quot;},{&quot;id&quot;:36,&quot;name&quot;:&quot;Dog&quot;},{&quot;id&quot;:37,&quot;name&quot;:&quot;Hybrid&quot;},{&quot;id&quot;:38,&quot;name&quot;:&quot;Hybrid&quot;},{&quot;id&quot;:39,&quot;name&quot;:&quot;Hybrid&quot;},{&quot;id&quot;:40,&quot;name&quot;:&quot;Hybrid&quot;},{&quot;id&quot;:41,&quot;name&quot;:&quot;Hybrid&quot;},{&quot;id&quot;:42,&quot;name&quot;:&quot;Dog&quot;},{&quot;id&quot;:43,&quot;name&quot;:&quot;Hybrid&quot;}]
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/specialties
+Body:			&lt;none&gt;
+HTTP/1.1 200 
+[{&quot;id&quot;:1,&quot;name&quot;:&quot;radiology&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;dentistry&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Grooming&quot;}]
+Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/vets
+Body:			&lt;none&gt;
+HTTP/1.1 200 
+[{&quot;id&quot;:1,&quot;firstName&quot;:&quot;James&quot;,&quot;lastName&quot;:&quot;Bamboo&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:2,&quot;firstName&quot;:&quot;Helen&quot;,&quot;lastName&quot;:&quot;Leary&quot;,&quot;specialties&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;radiology&quot;}]},{&quot;id&quot;:3,&quot;firstName&quot;:&quot;Linda&quot;,&quot;lastName&quot;:&quot;Douglas&quot;,&quot;specialties&quot;:[{&quot;id&quot;:3,&quot;name&quot;:&quot;dentistry&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:4,&quot;firstName&quot;:&quot;Rafael&quot;,&quot;lastName&quot;:&quot;Ortega&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:5,&quot;firstName&quot;:&quot;Henry&quot;,&quot;lastName&quot;:&quot;Stevens&quot;,&quot;specialties&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;radiology&quot;}]},{&quot;id&quot;:14,&quot;firstName&quot;:&quot;Shital&quot;,&quot;lastName&quot;:&quot;Gawande&quot;,&quot;specialties&quot;:[{&quot;id&quot;:3,&quot;name&quot;:&quot;dentistry&quot;}]},{&quot;id&quot;:24,&quot;firstName&quot;:&quot;Shital&quot;,&quot;lastName&quot;:&quot;G&quot;,&quot;specialties&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;radiology&quot;}]},{&quot;id&quot;:28,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:29,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:30,&quot;firstName&quot;:&quot;Tapasya&quot;,&quot;lastName&quot;:&quot;Kandekar&quot;,&quot;specialties&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;radiology&quot;}]},{&quot;id&quot;:34,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:37,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:39,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:40,&quot;firstName&quot;:&quot;James&quot;,&quot;lastName&quot;:&quot;Bean&quot;,&quot;specialties&quot;:[]},{&quot;id&quot;:43,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:44,&quot;firstName&quot;:&quot;Test1&quot;,&quot;lastName&quot;:&quot;Test2&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:45,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:46,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:47,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:48,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:49,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:50,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:51,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:52,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:53,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:54,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:55,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:56,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:57,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:58,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]},{&quot;id&quot;:59,&quot;firstName&quot;:&quot;Dr.Suman&quot;,&quot;lastName&quot;:&quot;Babu&quot;,&quot;specialties&quot;:[{&quot;id&quot;:2,&quot;name&quot;:&quot;surgery&quot;}]}]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8</a> at 29 Apr, 2021 8:48:32 PM</p>
+</div>
+</div>
+</body>
+</html>
