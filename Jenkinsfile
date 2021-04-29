@@ -25,7 +25,7 @@ pipeline {
     	}
 	post {
 		success {
-		    sh 'echo "Your test execution is done and reports will be avaible at - http://tnt-aks-automator.eastus.cloudapp.azure.com/build/reports/tests/test/index.html" in sometime.'
+		    sh 'echo "Your test execution is done and reports will be available at - http://tnt-aks-automator.eastus.cloudapp.azure.com/build/reports/tests/test/index.html" in sometime.'
 		}
 		failure {
 		    echo "Please check logs for more details."

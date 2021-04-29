@@ -3,19 +3,15 @@ import api.services.PetTypesApiClient;
 import api.services.SpecialtiesApiClient;
 import api.services.VetApiClient;
 import api.services.data.PetTypeItem;
-import api.services.data.Specialties;
 import api.services.data.SpecialtiesItem;
 import api.services.data.VeterinariansItem;
 import io.qameta.allure.Description;
-import io.restassured.http.Headers;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ListIterator;
 import java.util.Properties;
 
 
@@ -58,7 +54,7 @@ public class PetClinicApiTest {
         SoftAssertions softly = new SoftAssertions();
         System.out.println("The value at index 1" + getPet[0]);
         softly.assertThat(getPet[2].getId()).as("ID's should be unique").isNotSameAs(getPet[3].getId());
-        softly.assertThat(getPet[1].getName()).as("the name is test:").isEqualTo("cat");
+        softly.assertThat(getPet[4].getName()).as("the name is test:").isEqualTo("snake");
         softly.assertAll();
 
     }
@@ -66,7 +62,7 @@ public class PetClinicApiTest {
 
    @Test
     @Description("Test Description:Add new pettype using property file and hardcoding value.Post pet type rest controller is used to add pet type details.")
-    public void createPetType_checkId_ShouldReturnNewProduct () throws InvalidResponseException, IOException, FileNotFoundException {
+    public void createPetType_checkId_ShouldReturnNewProduct () throws InvalidResponseException, IOException {
 
         Properties pro = new Properties();
         FileInputStream file = new FileInputStream("src/test/java/data/PostPetTypeData.properties");
